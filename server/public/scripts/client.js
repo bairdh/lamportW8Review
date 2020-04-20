@@ -37,7 +37,7 @@ function getItems(){
         // loop through response
         for( let i=0; i< response.length; i++){
             // display each item on DOM
-            el.append( `<li>${ response[ i ].name }</li>`)
+            el.append( `<li>${response[i].size} ${response[i].color} ${ response[ i ].name }</li>`)
         } // end for
     }).catch( function( err ){
         alert( 'error getting inventory. see console for details' );
